@@ -38,7 +38,6 @@
     font-weight: 700;
     line-height: 4.2rem;
 
-    margin-bottom: 2.4rem;
 }
 #question-form form{
     border: 0.2rem solid var(--grey-blue);
@@ -155,4 +154,38 @@
     font-weight: 400;
     margin-top: 1.3rem;
     line-height: 1.9rem;
+}
+
+/*========= button Day / Night ===========*/
+
+.day-period{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+.day-period .image{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.day-period img{
+
+    height: 2rem;
+    width: 2rem;
+    
+}
+.day-period label{
+    display: none;
+    
+}
+#day-night{
+    
+    width: 5rem;
+    height: 2rem;
 }

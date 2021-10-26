@@ -40,8 +40,17 @@
             </header>
 
             <main>
+                
                 <section id="question-form">
                     <h2>Faça sua pergunta</h2>
+                    <div class="day-period">
+                        <div class="image">
+                            <img src="/images/Sol.svg" alt="Sol">
+                            <img src="/images/Lua.svg" alt="Lua">
+                        </div>
+                        <label for="day-night">Escolha a claridade (Day or Night)</label>
+                        <input type="range" id="day-night" name="day-night" min="0" max="1">
+                    </div>
                     <form action="/question/create/<%= roomId %> " method="POST">
                         <label class="sr-only" for-id="question">O que você quer perguntar?</label>
                         <textarea name="question" id="question" cols="30" rows="4"
