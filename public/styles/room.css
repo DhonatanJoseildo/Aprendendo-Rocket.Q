@@ -54,6 +54,10 @@
 
     outline: none;
 }
+#question-form form textarea.dark-mode-color {
+    color: var(--white);
+}
+
 #quetion-form form textarea::placeholder{
     color: var(--grey-blue);
 }
@@ -115,6 +119,7 @@
 .question-wrapper .actions > a{
     display: flex;
     align-items: center;
+    
 }
 .question-wrapper .actions > a > img{
     margin-right: .8rem;
@@ -159,33 +164,47 @@
 /*========= button Day / Night ===========*/
 
 .day-period{
-    height: 4rem;
     width: 100%;
+    height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
-    flex-direction: column;
 
+    margin-bottom: 0.5rem;
 }
 .day-period .image{
     display: flex;
     align-items: center;
-    width: 5rem;
-    align-items: center;
+    width: 8rem;
+    height: 3rem;
     justify-content: space-between;
 }
-.day-period img{
-
-    height: 2rem;
-    width: 2rem;
-    
+.image .sol{
+    margin-top: 0.2rem;
+    height: 3rem;
+    width: 4rem;
+    border: 2px solid var(--blue);
+    border-radius: .8rem 0 0 .8rem;
+    background: var(--white);
+    margin-right: 0.2rem;
 }
-.day-period label{
-    display: none;
-    
+.image .lua{
+    margin-top: 0.2rem;
+    height: 3rem;
+    width: 4rem;
+    border: 2px solid var(--blue);
+    border-radius: 0 .8rem .8rem 0;
+    background: var(--white);
 }
-#day-night{
-    
-    width: 5rem;
-    height: 2rem;
+.day-period img:hover{
+    background: var(--grey-medium);
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+.image img{
+    height: 2.5rem;
+    width: 3.5rem;
+}
+.question-wrapper .actions a.check.dark, .question-wrapper .actions a.delete.dark{
+    color: var(--white)
 }

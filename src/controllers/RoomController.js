@@ -16,10 +16,12 @@ module.exports = {
             }
             //verificar se esse numero ja existi
             const roomsExistIds = await db.all(`SELECT id FROM rooms`)
+
+            // verifica a condição passada e se ela existir retorna true //
             isRoom = roomsExistIds.some(roomExistId => roomExistId === roomId)
 
             if(!isRoom){
-                // inseri a sala no banco de dados
+                // insere a sala no banco de dados
                 await db.run(`INSERT INTO rooms (
                     id,
                     pass

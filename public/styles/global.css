@@ -24,6 +24,22 @@ html{
     /* fonte padrão do navegador 16px = 100% formatei para 10px*/
     font-size: 62.5%;
 }
+html.periodNight{
+    --black: #C291F2;
+    --white: #FAFAFA;
+    --red: #9C1A30;
+    --light-blue: #4C0D8C;
+    --blue: #9933FF;
+    --background: #1F0835;
+    --overlay: #220440;
+    --Icons-details: #825EA6;
+
+    --gray-dark: #9A75BF;
+    --gray-blue: #BD86F4;
+    --gray-medium: #D1C1E1;
+    --gray-light: #9935FC;
+}
+
 body{
     display: flex;
     height: 100vh;
@@ -83,7 +99,17 @@ button.outlined, .button.outlined{
     color: var(--blue);
     border: 0.2rem solid var(--blue);
 }
+.button.outlined.dark-mode-copy {
+    background: transparent;
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
 
+.button.dark-mode-btn{
+    background: transparent;
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
 button.red,
 .button.red{
     background: var(--red);
@@ -103,4 +129,10 @@ button.grey,
 }
 .content header img{
     width: 16.7rem;
+}
+
+/** Periodo do Dia **/
+
+body.periodDay{
+    background: var(--grey-dark);
 }

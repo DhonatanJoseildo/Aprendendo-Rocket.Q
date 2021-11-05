@@ -14,6 +14,13 @@ header{
     background: url('/images/home-bg-img.svg') no-repeat top/contain;
     background-position-x: -10rem;
 }
+#bg.dark-mode-img {
+    grid-area: left;
+
+    /* top/contain -> a imagem ficara no topo e se encaixara na div em que ela está */
+    background: url('/images/home-bg-img-dark.svg') no-repeat top/contain;
+    background-position-x: -5rem;
+}
 main{
     grid-area: right;
 
@@ -21,7 +28,7 @@ main{
     align-items: center;
     margin-top: -30rem;
 }
-main .contentainer{
+main .container{
     width: min(36.3rem, 100%);
 }
 main h2{
@@ -39,6 +46,9 @@ input{
 input, button, .button{
     width: 100%;
     margin-bottom: 1.8rem;
+}
+form input.dark-mode-color {
+    color: var(--white);
 }
 /* separator line */
 

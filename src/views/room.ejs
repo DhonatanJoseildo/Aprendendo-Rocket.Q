@@ -18,6 +18,9 @@
 
         <!-- SCRIPTS-->
         <script src="/scripts/main.js" defer type="module"></script>
+        <script src="/scripts/checkPeriod.js" defer></script>
+        
+        
     </head>
 
     <body>
@@ -36,21 +39,24 @@
                         <img src="/images/users-white.svg" alt="Criar uma sala">
                         Criar Sala
                     </a>
+                    <input type="checkbox" id="switchPeriod">
                 </div>
             </header>
 
             <main>
-                
                 <section id="question-form">
                     <h2>Faça sua pergunta</h2>
                     <div class="day-period">
                         <div class="image">
-                            <img src="/images/Sol.svg" alt="Sol">
-                            <img src="/images/Lua.svg" alt="Lua">
+                            <div class="sol"><img src="/images/Sol.svg" alt="Sol">
+                            </div>
+
+                            <div class="lua"><img src="/images/Lua.svg" alt="Lua">
+                            </div>
                         </div>
-                        <label for="day-night">Escolha a claridade (Day or Night)</label>
-                        <input type="range" id="day-night" name="day-night" min="0" max="1">
                     </div>
+
+
                     <form action="/question/create/<%= roomId %> " method="POST">
                         <label class="sr-only" for-id="question">O que você quer perguntar?</label>
                         <textarea name="question" id="question" cols="30" rows="4"
@@ -76,29 +82,29 @@
                         <% } %> 
 
                         <% questions.forEach(question => {%>
-                             <div class="question-wrapper">
-                            <div class="question-content">
-                                <div class="user">
-                                    <img src="/images/user1.svg" alt="Avatar Mensagem">
-                                </div>
-                                <div class="question">
-                                    <p>
-                                       <%= question.title %> 
-                                    </p>
-                                </div>
+                            <div class="question-wrapper">
+                                <div class="question-content">
+                                    <div class="user">
+                                        <img src="/images/user1.svg" alt="Avatar Mensagem">
+                                    </div>
+                                    <div class="question">
+                                        <p>
+                                        <%= question.title %> 
+                                        </p>
+                                    </div>
 
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="check" data-id="<%= question.id %> ">
+                                        <img src="/images/check.svg" alt="Check">
+                                        Marcar como lida
+                                    </a>
+                                    <a href="#" class="delete" data-id="<%= question.id %> ">
+                                        <img src="/images/trash.svg" alt="Delete">
+                                        Excluir
+                                    </a>
+                                </div>
                             </div>
-                            <div class="actions">
-                                <a href="#" class="check" data-id="<%= question.id %> ">
-                                    <img src="/images/check.svg" alt="Check">
-                                    Marcar como lida
-                                </a>
-                                <a href="#" class="delete" data-id="<%= question.id %> ">
-                                    <img src="/images/trash.svg" alt="Delete">
-                                    Excluir
-                                </a>
-                            </div>
-                        </div>
                         <% }); %>  
                        
                         <% questionsRead.forEach(questionRead =>{%>
@@ -121,13 +127,10 @@
                                 </div>
                             </div>
                         <% }); %> 
-                        
 
                     </div>
                 </section>
-
             </main>
-
         </div>
 
         <!------------- MODAL-------->
@@ -147,6 +150,7 @@
                 </form>
             </div>
         </div>
+        
     </body>
 
 </html>
