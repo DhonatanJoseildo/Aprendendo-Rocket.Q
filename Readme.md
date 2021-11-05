@@ -22,3 +22,8 @@ Ao back-end:
     * Aprendendo um pouco sobre o package.json
 
 Retive grandes conhecimentos nesse pequeno projeto, mas que forneceu grandes conhecimento.
+
+upgrade 1.0.0
+    * Criação do modo norturno ainda em fase de acabamento
+    * A maior parte do script utilizado no ( modo noturno ) foi retirado de outro repositorio.
+    * Atualizando e construindo pequanas partes do modo noturno na sala.
