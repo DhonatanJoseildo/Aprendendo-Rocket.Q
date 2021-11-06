@@ -25,5 +25,6 @@ Retive grandes conhecimentos nesse pequeno projeto, mas que forneceu grandes con
 
 upgrade 1.0.0
     * Criação do modo norturno ainda em fase de acabamento
-    * A maior parte do script utilizado no ( modo noturno ) foi retirado de outro repositorio.
+    * Parte do script(Noturno) / images (Noturno) retirado de outro repositorio.
     * Atualizando e construindo pequanas partes do modo noturno na sala.
+    * Finalizado a room dark (Sala noturno).
