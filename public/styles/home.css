@@ -19,7 +19,7 @@ header{
 
     /* top/contain -> a imagem ficara no topo e se encaixara na div em que ela está */
     background: url('/images/home-bg-img-dark.svg') no-repeat top/contain;
-    background-position-x: -5rem;
+    background-position-x: -10rem;
 }
 main{
     grid-area: right;
