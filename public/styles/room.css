@@ -160,51 +160,6 @@
     margin-top: 1.3rem;
     line-height: 1.9rem;
 }
-
-/*========= button Day / Night ===========*/
-
-.day-period{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    margin-bottom: 0.5rem;
-}
-.day-period .image{
-    display: flex;
-    align-items: center;
-    width: 8rem;
-    height: 3rem;
-    justify-content: space-between;
-}
-.image .sol{
-    margin-top: 0.2rem;
-    height: 3rem;
-    width: 4rem;
-    border: 2px solid var(--blue);
-    border-radius: .8rem 0 0 .8rem;
-    background: var(--white);
-    margin-right: 0.2rem;
-}
-.image .lua{
-    margin-top: 0.2rem;
-    height: 3rem;
-    width: 4rem;
-    border: 2px solid var(--blue);
-    border-radius: 0 .8rem .8rem 0;
-    background: var(--white);
-}
-.day-period img:hover{
-    background: var(--grey-medium);
-    border-radius: 0.8rem;
-    cursor: pointer;
-}
-.image img{
-    height: 2.5rem;
-    width: 3.5rem;
-}
 .question-wrapper .actions a.check.dark, .question-wrapper .actions a.delete.dark{
     color: var(--white)
 }
