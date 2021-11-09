@@ -28,3 +28,8 @@ upgrade 1.0.0
     * Parte do script(Noturno) / images (Noturno) retirado de outro repositorio.
     * Atualizando e construindo pequanas partes do modo noturno na sala.
     * Finalizado a room dark (Sala noturno).
+
+update 1.0.5
+    * Finalizado a implementação do modo noturno
+    * Feito pequenos ajustes de alinhamento
+    * Modificada a ativação do modo noturno, adicionada butão de ativação.
