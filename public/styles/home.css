@@ -48,7 +48,7 @@ input, button, .button{
     margin-bottom: 1.8rem;
 }
 form input.dark-mode-color {
-    color: var(--white);
+    color: var(--grey-dark);
 }
 /* separator line */
 

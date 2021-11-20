@@ -17,10 +17,11 @@ html{
 
     --grey-dark:#4D5E77;
     --grey-blue:#A1B2CD;
-    --grey-medium:#D3D9E2;
+    
     --grey-light:#E5EAF1;
     --grey-medium: #eaecf2;
 
+    --button-period:#FAFAFA;
     /* fonte padrão do navegador 16px = 100% formatei para 10px*/
     font-size: 62.5%;
 }
@@ -38,6 +39,8 @@ html.periodNight{
     --gray-blue: #BD86F4;
     --gray-medium: #D1C1E1;
     --gray-light: #9935FC;
+
+    --button-period:#9933FF;
 }
 
 body{
@@ -154,9 +157,14 @@ button.grey,
     width: 4rem;
     border: 2px solid var(--blue);
     border-radius: .8rem 0 0 .8rem;
-    background: var(--white);
+    background: var(--button-period);
     margin-right: 0.2rem;
     z-index: 10;
+}
+html.periodNight .image .lua:hover,
+html.periodNight .image .sol:hover{
+    background: var(--button-period);
+    filter: brightness(1.2);
 }
 .image .lua{
     margin-top: 0.2rem;
@@ -164,10 +172,10 @@ button.grey,
     width: 4rem;
     border: 2px solid var(--blue);
     border-radius: 0 .8rem .8rem 0;
-    background: var(--white);
+    background: var(--button-period);
     z-index: 10;
 }
-.image .sol:hover, .image .lua:hover{
+html .image .sol:hover, .image .lua:hover{
     background: var(--grey-medium);
     cursor: pointer;
 }
