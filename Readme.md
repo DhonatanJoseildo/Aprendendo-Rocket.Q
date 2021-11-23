@@ -24,17 +24,20 @@ Ao back-end:
 Retive grandes conhecimentos nesse pequeno projeto, mas que forneceu grandes conhecimento.
 
 upgrade 1.0.0
+
     * Criação do modo norturno ainda em fase de acabamento
     * Parte do script(Noturno) / images (Noturno) retirado de outro repositorio.
     * Atualizando e construindo pequanas partes do modo noturno na sala.
     * Finalizado a room dark (Sala noturno).
 
 update 1.0.5
+
     * Finalizado a implementação do modo noturno
     * Feito pequenos ajustes de alinhamento
     * Modificada a ativação do modo noturno, adicionada butão de ativação.
 
-update 1.1.0:
+update 1.1.0
+
     * Ajustado e melhorado o comportamento do botão para troca de estado noturno.
     * Implementado o Require na validação de entrada da sala Front-end
     * Implementado a valadição no back-end verificando se o Codigo e existente no banco
