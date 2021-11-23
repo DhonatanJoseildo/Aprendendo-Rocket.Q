@@ -33,3 +33,9 @@ update 1.0.5
     * Finalizado a implementação do modo noturno
     * Feito pequenos ajustes de alinhamento
     * Modificada a ativação do modo noturno, adicionada butão de ativação.
+
+update 1.1.0:
+    * Ajustado e melhorado o comportamento do botão para troca de estado noturno.
+    * Implementado o Require na validação de entrada da sala Front-end
+    * Implementado a valadição no back-end verificando se o Codigo e existente no banco
+    * Testad

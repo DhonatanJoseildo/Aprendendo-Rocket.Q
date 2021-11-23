@@ -56,7 +56,7 @@ module.exports = {
         const db = await Database()
         const roomId = parseInt(req.body.roomId)
         const roomsExistIds = await db.all(`SELECT id FROM rooms`)
-        
+
         if (roomsExistIds.some(roomExistId => roomExistId.id === roomId)) {
             res.redirect(`/room/${roomId}`)
         }else{
